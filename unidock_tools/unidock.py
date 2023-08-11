@@ -218,7 +218,7 @@ class UniDock():
         #print([getattr(args, prop)for prop in self.ligand_input_method if getattr(args, prop, None) is not None])
         
         if len(assigned_properties) != 1:
-            raise ValueError("Exactly one argument must be assigned a value.")
+            raise ValueError("please input ligand file(s) properly.")
         return assigned_properties[0]
 
     def _get_config(self, args):
