@@ -32,7 +32,8 @@ class UniDock():
         # delete output directory if it already exists
         if os.path.exists(self.output_dir) and os.path.isdir(self.output_dir):
             shutil.rmtree(self.output_dir)
-        os.makedirs(self.output_dir, exist_ok=True)
+        if self.output_dir.strip() != ".":
+            os.makedirs(self.output_dir, exist_ok=True)
 
         self.ligands_prepared_dir = "%s/ligands_prepared"%self.output_dir
         os.makedirs(self.ligands_prepared_dir, exist_ok=True)
