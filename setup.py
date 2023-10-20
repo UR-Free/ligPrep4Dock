@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='ligPrep',
-    version='0.01',
+    version='0.0.1',
     author="Young",
     author_email="he.yang@siat.ac.cn",
     url='https://github.com/UR-Free/unidock_tools',
